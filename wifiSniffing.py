@@ -2,13 +2,13 @@ import subprocess
 
 
 def run_netsh_command():
-    """Run the 'netsh wlan show networks' command and return the output."""
+    """Run the 'netsh wlan show networks' command and returns the output."""
     try:
         result = subprocess.run(
             ["netsh", "wlan", "show", "networks", "mode=bssid"],
             capture_output=True,
             text=True,
-            check=True  # Automatically raises CalledProcessError on failure
+            check=True  # raises CalledProcessError on failure
         )
         return result.stdout
     except subprocess.CalledProcessError as e:
@@ -24,7 +24,7 @@ def run_netsh_command():
 
 
 def parse_networks_output(output):
-    """Parse the output of the 'netsh wlan show networks' command."""
+    """Parse the output of the 'netsh wlan show networks' command. return the cleaned list of networks"""
     networks = []
     current_network = {}
 
@@ -69,6 +69,6 @@ def probe_new_networks():
         networks = parse_networks_output(output)
         display_networks(networks)
 
-
+"""Initiates the main function"""
 if __name__ == "__main__":
     probe_new_networks()
