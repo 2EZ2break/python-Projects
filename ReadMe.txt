@@ -6,7 +6,7 @@ wifiSniffer.py is a script you can run from the windows cammand line that scans 
 
 Project 2: Simple Password Brute Force 
 
-SimplePasswordBruteForce.py demonstrates a basic brute-force attack algorithm designed to break a password by systematically guessing all possible combinations of characters. It serves as an example of how brute-force attacks function in cybersecurity.
+SimplePasswordBruteForce.py demonstrates a basic brute-force attack algorithm designed to break a password by systematically guessing all possible combinations of characters. It serves as an example of how brute force attacks function in cybersecurity.
 
 How It Works:
 
@@ -18,3 +18,7 @@ The script will then iterate through all possible character combinations, hash e
 This algorithm is not optimized for real world penetration testing. There are more advanced tools like Hashcat or John the Ripper that are more efficient.
 
 This script is ideal for demonstrating the concept of brute-force attacks and It should only be used in authorized environments and for ethical purposes AKA I am not responsible for what you do with this script though you probably won't get far with it anyways. 
+
+Project 3: Port Scanner
+
+This script scans for ports and can be run in the windows terminal, you need to provide an IP address to target in order for the script to run correctly. 
