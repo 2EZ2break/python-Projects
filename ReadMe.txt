@@ -22,3 +22,7 @@ This script is ideal for demonstrating the concept of brute-force attacks and It
 Project 3: Port Scanner
 
 This script scans for ports and can be run in the windows terminal, you need to provide an IP address to target in order for the script to run correctly. 
+
+Project 4: EtcEnumerator
+
+This Python script enumerates key configuration files within the /etc/ directory of a Linux system. It checks files such as /etc/passwd, /etc/os-release, /etc/hostname, and others to gather system information. The script attempts to read these files and outputs the results (or errors) to a text file named etc_enumeration_output.txt. This script is useful for system reconnaissance and gathering basic system configuration details in a safe manner. To execute this properly you will need access to your target machine to upload the script and run it. The output file will be located in the same direcotry in which it is run. 
